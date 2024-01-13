@@ -4,11 +4,12 @@
 class Stdirgen < Formula
   desc "File and directory generator in rust"
   homepage "https://github.com/jozhw/stdirgen"
-  url "https://github.com/jozhw/stdirgen/releases/latest/download/stdirgen-universal-apple-darwin.tar.gz"
-  sha256 "5151daf5aa29f2e8ecad42ceb4d35f139573cad6bf56a50764b617e153b57e74"
-  version "0.1.0"
+  url "https://github.com/jozhw/stdirgen/archive/v0.1.0.tar.gz"
+  sha256 "6e1841579ee8d96757d90664c970952248bcbfd9d20dbe1c6c4ee6ab683fe8ee"
+
+  depends_on "rust" => :build
 
   def install
-    bin.install "stdirgen"
+    system "cargo", "install", "--root", prefix, "--path", "."
   end
 end
