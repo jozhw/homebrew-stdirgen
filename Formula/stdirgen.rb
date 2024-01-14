@@ -4,8 +4,8 @@
 class Stdirgen < Formula
   desc "File and directory generator in rust"
   homepage "https://github.com/jozhw/stdirgen"
-  url "https://github.com/jozhw/stdirgen/archive/v0.1.0.tar.gz"
-  sha256 "6e1841579ee8d96757d90664c970952248bcbfd9d20dbe1c6c4ee6ab683fe8ee"
+  url "https://github.com/jozhw/stdirgen/archive/v0.2.0.tar.gz"
+  sha256 "9c163c48c88b12d8d6aed5f01fe6ef162178036bed0b08373b74d2faa2554e55"
 
   depends_on "rust" => :build
 
